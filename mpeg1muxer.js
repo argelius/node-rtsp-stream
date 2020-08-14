@@ -21,6 +21,12 @@ Mpeg1Muxer = function(options) {
     }
   }
   this.spawnOptions = [
+    "-fflags",
+    "nobuffer",
+    "-fflags",
+    "discardcorrupt",
+    "-flags",
+    "low_delay",
     "-rtsp_transport",
     "tcp",
     "-i",
