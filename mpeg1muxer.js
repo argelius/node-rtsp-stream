@@ -27,6 +27,8 @@ Mpeg1Muxer = function(options) {
     "discardcorrupt",
     "-flags",
     "low_delay",
+    "-avioflags",
+    "direct",
     "-rtsp_transport",
     "tcp",
     "-i",
